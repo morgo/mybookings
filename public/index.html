@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>MyBookings</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <link rel='stylesheet' href='./stylesheets/style.css' />
+
+  </head>
+  <body>
+
+<nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="/">MyBookings</a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/acknowledgements.html">Acknowledgements</a>
+      </li>
+    </ul>
+
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="jumbotron">
+
+    <div class="btn-group pull-right" role="group" id="mode">
+      <button type="button" id='mode-date' class="btn btn-secondary"><i class="fa fa-calendar" aria-hidden="true"></i> Date</button>
+      <button type="button" id='mode-location' class="btn btn-secondary"><i class="fa fa-map-marker" aria-hidden="true"></i> Location</button>
+    </div>
+
+  <h1>Upcoming Events</h1>
+
+  </div>
+</div>
+
+<div id="main" class="container-fluid">
+
+Loading...
+
+    </div> <!-- // container -->
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./javascripts/js.cookie.js"></script>
+    <script type="text/javascript" src="./javascripts/app.js"></script>
+    <script type="text/javascript">
+
+var events = [];
+
+/* onload */ 
+$(function() {
+  refreshEvents();
+});
+
+    </script>
+  </body>
+</html>

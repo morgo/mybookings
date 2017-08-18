@@ -1,0 +1,62 @@
+body {
+  margin-top: 70px;
+}
+
+.page-header {
+  padding: 20px 15px;
+  margin: -15px;
+  margin-bottom: 30px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.header {
+  text-align: center;
+  font-weight: bold;
+}
+
+#seat-selection td {
+  width: 20px;
+  height: 20px;
+}
+
+#seat-selection span {
+  display: none;
+}
+
+.available:hover {
+  border: 1px solid red;
+}
+
+.available {
+  background-color: blue;
+}
+
+.selected {
+  background-color: green;
+}
+
+.taken {
+  background-color: gray;
+}
+
+.distance {
+  font-weight: bold;
+}
+
+.index {
+  padding-bottom: 40px;
+}
+
+.index div {
+  float: left;
+}
+
+.key {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+}
