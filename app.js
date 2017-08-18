@@ -41,10 +41,8 @@ app.get('/bookings/:id', (req, res, next) => {
      return next(err)
     }
 
-    res.send({
-      event:   booking.event,
-      tickets: booking.tickets // available tickets
-    })
+    res.send(booking)
+
   })
 })
 
