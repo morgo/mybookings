@@ -215,7 +215,7 @@ $("#mode").on("click", "button", function() {
     });
 
   } else {
-    alert("Your broweser does not support geolocation");  
+    alert("Your browser does not support geolocation");  
   }
 
 });
